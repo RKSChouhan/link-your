@@ -14,7 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      scholarship_submissions: {
+        Row: {
+          aadhaar_number: string | null
+          bank_account_number: string | null
+          created_at: string
+          email: string
+          full_name: string
+          id: string
+          ifsc_code: string | null
+          is_dbt_enabled: boolean | null
+          phone: string | null
+          scholarship_type: string | null
+          updated_at: string
+        }
+        Insert: {
+          aadhaar_number?: string | null
+          bank_account_number?: string | null
+          created_at?: string
+          email: string
+          full_name: string
+          id?: string
+          ifsc_code?: string | null
+          is_dbt_enabled?: boolean | null
+          phone?: string | null
+          scholarship_type?: string | null
+          updated_at?: string
+        }
+        Update: {
+          aadhaar_number?: string | null
+          bank_account_number?: string | null
+          created_at?: string
+          email?: string
+          full_name?: string
+          id?: string
+          ifsc_code?: string | null
+          is_dbt_enabled?: boolean | null
+          phone?: string | null
+          scholarship_type?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
